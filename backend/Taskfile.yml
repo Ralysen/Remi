@@ -1,0 +1,13 @@
+---
+version: "3"
+
+tasks:
+  build:
+    desc: build application locally
+    cmd: npm run build
+  start:dev:
+    desc: run application locally as dev
+    cmd: npm run dev
+  format:
+    desc: format code for entire project
+    cmd: npm run format

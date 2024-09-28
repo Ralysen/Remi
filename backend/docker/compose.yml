@@ -1,0 +1,11 @@
+version: '3.1'
+services:
+  db:
+    container_name: remi_db_dev
+    image: postgres:16.4-bullseye
+    environment:
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: remi_db
+      POSTGRES_NAME: remi
+    ports:
+      - "5434:5432"
