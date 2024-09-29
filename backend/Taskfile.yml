@@ -11,3 +11,14 @@ tasks:
   format:
     desc: format code for entire project
     cmd: npm run format
+  db-up:
+    desc: Create the database using Docker
+    cmds:
+      - docker compose up -d
+  db-down:
+    desc: Stop the database
+    cmds:
+      - docker compose down
+  migration-generate:
+    desc: generate migration based on prisma schema
+    cmd: npx prisma migrate dev --name init

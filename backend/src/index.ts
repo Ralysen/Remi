@@ -8,7 +8,7 @@ const server = Fastify({
 async function main() {
   try {
     const config = appConfig();
-
+    
     await server.listen({
       port: +config.port,
       host: config.host,
